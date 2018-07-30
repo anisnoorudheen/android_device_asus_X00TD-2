@@ -1,0 +1,2 @@
+add_lunch_combo arrow_X00TD-eng
+add_lunch_combo arrow_X00TD-userdebug
