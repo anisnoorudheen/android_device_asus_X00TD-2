@@ -1,14 +1,10 @@
 [
   {
-    "remote":      "github",
-    "repository":  "sujitroy/kernel_asus_sdm660",
-    "target_path": "kernel/asus/sdm660",
-    "branch":      "arrow-8.x"
+    "repository":  "android_kernel_asus_sdm660",
+    "target_path": "kernel/asus/sdm660"
   },
   {
-    "remote":      "github",
-    "repository":  "sujitroy/vendor_asus",
+    "repository":  "android_vendor_asus_X00TD",
     "target_path": "vendor/asus"
-    "branch":      "arrow-8.x"
   }
 ]
