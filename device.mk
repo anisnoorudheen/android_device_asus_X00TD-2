@@ -68,12 +68,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library
+#PRODUCT_PACKAGES += \
+#    AntHalService \
+#    com.dsi.ant.antradio_library
 
-PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+#PRODUCT_COPY_FILES += \
+#    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -84,7 +84,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.0-impl \
     android.hardware.soundtrigger@2.0-service \
     audio.a2dp.default \
-    audio_amplifier.sdm660 \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
@@ -94,6 +93,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libvolumelistener \
     tinymix
+#    audio_amplifier.sdm660 \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -270,9 +270,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
 # Manifest replacement for non NFC variant
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest_no_nfc.xml:$(TARGET_COPY_OUT_VENDOR)/manifest_no_nfc.xml \
-    $(LOCAL_PATH)/rootdir/bin/device_check.sh:install/bin/device_check.sh
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/manifest_no_nfc.xml:$(TARGET_COPY_OUT_VENDOR)/manifest_no_nfc.xml \
+#    $(LOCAL_PATH)/rootdir/bin/device_check.sh:install/bin/device_check.sh
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -300,28 +300,28 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # NFC
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
-    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+#    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+#    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
+#    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf \
+#    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
-    com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    com.nxp.nfc.nq.xml \
-    libnqnfc-nci \
-    libnqp61-jcop-kit \
-    nfc_nci.nqx.default \
-    NQNfcNci \
-    Tag \
-    vendor.nxp.hardware.nfc@1.0-impl \
-    vendor.nxp.hardware.nfc@1.0-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.nfc@1.0-impl \
+#    com.android.nfc_extras \
+#    com.nxp.nfc.nq \
+#    com.nxp.nfc.nq.xml \
+#    libnqnfc-nci \
+#    libnqp61-jcop-kit \
+#    nfc_nci.nqx.default \
+#    NQNfcNci \
+#    Tag \
+#    vendor.nxp.hardware.nfc@1.0-impl \
+#    vendor.nxp.hardware.nfc@1.0-service
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -341,10 +341,10 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+#    $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+#PRODUCT_ENFORCE_RRO_TARGETS := \
+#    framework-res
 
 # Power
 PRODUCT_PACKAGES += \
@@ -399,8 +399,8 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_X00TD
+#PRODUCT_PACKAGES += \
+#    librecovery_updater_X00TD
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -433,11 +433,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Soter
-PRODUCT_PACKAGES += \
-    soter
+#PRODUCT_PACKAGES += \
+#    soter
 
-PRODUCT_BOOT_JARS += \
-    soter
+#PRODUCT_BOOT_JARS += \
+#    soter
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -448,11 +448,11 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Tetheroffload
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+#PRODUCT_PACKAGES += \
+#    ipacm \
+#    IPACM_cfg.xml \
+#    libipanat \
+#    liboffloadhal
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
