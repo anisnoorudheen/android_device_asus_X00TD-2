@@ -50,6 +50,9 @@ vendor/lib/vendor.qti.hardware.alarm@1.0.so|a203ef7483d4ca725a8acb1d4b77987b03bf
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|16a27a64f95ed2de85dea2a0494c8fd59d53dfa4
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|12c07af010cc2fde76820d4768ebe709fae57fa5
 
+# AptX
+-vendor/app/aptxui/aptxui.apk
+
 # aptX - from Nokia N7+
 vendor/lib64/libaptX_encoder.so|22f5749edb5099526788c22708099a7791dd837f
 vendor/lib64/libaptXHD_encoder.so|c4ad4d6d7615f7df3ea1a4be5c6dae8a8c8ee8b1
@@ -104,26 +107,22 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Bluetooth
--vendor/app/aptxui/aptxui.apk
+# Bluetooth - from Nokia N7+
 vendor/bin/btnvtool
 vendor/bin/hci_qcomm_init
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/wcnss_filter
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib/libbt-hidlclient.so
-vendor/lib/libbtnv.so
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
+-vendor/lib/libbtnv.so
+vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/libbt-hidlclient.so
-vendor/lib64/libbtnv.so
-# aptX - from marlin - OPM1.171019.011
-lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
-lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
+-vendor/lib64/libbtnv.so
 
 # Camera
 lib/libchromaflash.so
