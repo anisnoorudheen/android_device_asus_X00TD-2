@@ -108,21 +108,21 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Bluetooth - from Nokia N7+
-vendor/bin/btnvtool
-vendor/bin/hci_qcomm_init
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/bin/wcnss_filter
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
-vendor/lib/libbt-hidlclient.so
--vendor/lib/libbtnv.so
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
-vendor/lib64/libbt-hidlclient.so
--vendor/lib64/libbtnv.so
+vendor/bin/btnvtool|4ec92ef359a05f69203242b8b0dcbe9aeb1ac2c7
+vendor/bin/hci_qcomm_init|7226cd311a8236e98677570544213d2fed0b15dc
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|1027ab60eee5e6a56d15c01c5211307d073a145a
+vendor/bin/wcnss_filter|4b068a2c1d5957524dd2efd2a8c8214b3f739ed0
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|1a2dc1c2d217f47b9c99a0afa9e4912abd32e381
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so|a6d8a4a2e89450d6f3adfe8074f1af9f5ea8b7dd
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|56e0de2b00946ac83f8c8c66ff962940b7dd35a7
+vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so|922eaf77cebab680858924c474c9871bcb789588
+vendor/lib/libbt-hidlclient.so|f846bf71e2766c81fe6c4065a795bc6a6e58e775
+-vendor/lib/libbtnv.so|67350278088a4d10980bdc0b691a3d5878c48523
+vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so|a127ddd12b759eb91b58345f17b784388a1c4687
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|78e17b71b14a054242c647d93200197744cd013d
+vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so|40f58e495e814063e9cde1ecbf4ff86a3751b219
+vendor/lib64/libbt-hidlclient.so|4aab6f9497aa55f452915437dd8b2b6636413bb2
+-vendor/lib64/libbtnv.so|6dce5418587127591fe02ae95e5d983a923c208c
 
 # Camera
 lib/libchromaflash.so
