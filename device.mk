@@ -193,8 +193,7 @@ PRODUCT_PACKAGES += \
 
 # GPS / Location
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl-qti \
-    android.hardware.gnss@1.0-service-qti \
+    android.hardware.gnss@1.1-impl-qti \
     libcurl \
     libgnss \
     libgnsspps \
@@ -215,8 +214,8 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@1.0-impl \
-    android.hardware.health@1.0-service
+    android.hardware.health@2.0-impl \
+    android.hardware.health@2.0-service
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -322,6 +321,26 @@ PRODUCT_PACKAGES += \
 #    Tag \
 #    vendor.nxp.hardware.nfc@1.0-impl \
 #    vendor.nxp.hardware.nfc@1.0-service
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.1-service \
+    android.hardware.nfc@1.1-impl \
+    com.android.nfc_extras \
+    NfcNci \
+    SecureElement \
+    Tag \
+    vendor.nxp.hardware.nfc@1.0-impl \
+    vendor.nxp.hardware.nfc@1.0-service
 
 # OMX
 PRODUCT_PACKAGES += \
