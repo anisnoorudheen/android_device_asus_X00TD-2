@@ -253,6 +253,13 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 #TARGET_RIL_VARIANT := caf
 #PROTOBUF_SUPPORTED := true
 
+# Seccomp
+BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
+
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # Use Snapdragon LLVM, if available
 TARGET_USE_SDCLANG := true
 
