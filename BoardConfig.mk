@@ -22,7 +22,7 @@
 # definition file).
 #
 
-DEVICE_PATH := device/asus/X00T
+DEVICE_PATH := device/asus/X00TD
 
 BOARD_VENDOR := asus
 
@@ -62,9 +62,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
-TARGET_KERNEL_CONFIG := X00T_defconfig
+TARGET_KERNEL_CONFIG := X00TD_defconfig
 TARGET_KERNEL_VERSION := 4.4
-TARGET_KERNEL_CLANG_COMPILE := true
+#TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := 8.0.6
 
 # ANT+
@@ -240,13 +240,13 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X00T
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X00TD
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 TARGET_RIL_VARIANT := caf
 PROTOBUF_SUPPORTED := true
-DISABLE_RILD_OEM_HOOK := false
+#DISABLE_RILD_OEM_HOOK := false
 
 # Seccomp
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
@@ -263,8 +263,8 @@ BOARD_SEPOLICY_VERS := 28.0
 TARGET_USE_SDCLANG := true
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_X00T
-TARGET_RECOVERY_DEVICE_MODULES := libinit_X00T
+TARGET_INIT_VENDOR_LIB := libinit_X00TD
+TARGET_RECOVERY_DEVICE_MODULES := libinit_X00TD
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -282,4 +282,4 @@ WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # inherit from the proprietary version
--include vendor/asus/X00T/BoardConfigVendor.mk
+-include vendor/asus/X00TD/BoardConfigVendor.mk
